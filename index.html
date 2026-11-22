@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashwise: a free, private dashcam app for Android that records behind Waze</title>
+<meta name="description" content="Dashwise turns your Android phone into a dashcam. It keeps recording under Waze and Maps, saves the moment after a bump, stamps time, speed and address on the video and logs every trip on a map. No adverts, no account, no tracking.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/dashwise/">
+<meta name="theme-color" content="#eef4f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#07090d" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dashwise">
+<meta property="og:title" content="Dashwise: a free, private dashcam app for Android that records behind Waze">
+<meta property="og:description" content="Dashwise turns your Android phone into a dashcam. It keeps recording under Waze and Maps, saves the moment after a bump, stamps time, speed and address on the video and logs every trip on a map. No adverts, no account, no tracking.">
+<meta property="og:url" content="https://customgpter.github.io/dashwise/">
+<meta property="og:image" content="https://customgpter.github.io/dashwise/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dashwise recording a dusk drive: speed, address, GPS and a large Save button over the road ahead">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Dashwise","url":"https://customgpter.github.io/dashwise/","description":"Dashwise turns your Android phone into a dashcam. It keeps recording under Waze and Maps, saves the moment after a bump, stamps time, speed and address on the video and logs every trip on a map. No adverts, no account, no tracking.","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 10 or later","softwareVersion":"1.2.0","downloadUrl":"https://github.com/CustomGPTer/dashwise/releases/latest/download/Dashwise.apk","releaseNotes":"https://customgpter.github.io/dashwise/releases.html","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB","image":"https://customgpter.github.io/dashwise/assets/og.png","featureList":["Records behind other apps","Loop recording","Restarts by itself","One-tap Save","Impact and hard braking","Save from anywhere","Burned into the picture","Every lens","Front and back together","A journal of every drive","A map that follows the video","Evidence pack"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Dashwise really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription and no adverts. Parking guard, front-and-back recording and Drive backup are all included."}},{"@type":"Question","name":"Is it on Google Play?","acceptedAnswer":{"@type":"Answer","text":"No. Dashwise is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later."}},{"@type":"Question","name":"Will it keep recording when I open Waze?","acceptedAnswer":{"@type":"Answer","text":"Yes. Recording runs in the background with a notification, and a small indicator floats over Waze so you can see it's running and save a clip without switching back. Allow \"Show over other apps\" and set Dashwise's battery use to Unrestricted, which the setup walks you through."}},{"@type":"Question","name":"How much space does it use?","acceptedAnswer":{"@type":"Answer","text":"You choose a limit, 20 GB to start with. When loop clips reach it, the oldest are deleted. A 3-minute 1080p clip is roughly 250 MB. Saved clips don't count towards the limit and are never deleted automatically."}},{"@type":"Question","name":"Where are my videos?","acceptedAnswer":{"@type":"Answer","text":"In your phone's gallery: Movies/Dashwise/Loop for rolling clips and Movies/Dashwise/Saved for clips you or a bump saved. Photos are in Pictures/Dashwise."}},{"@type":"Question","name":"Can it start by itself?","acceptedAnswer":{"@type":"Answer","text":"Yes. Pick your car's Bluetooth, or choose Start when charging, and Dashwise starts recording, then hands you back to Waze. Android only lets a camera app start recording while it's on screen, which is why it appears for a moment."}},{"@type":"Question","name":"Does it use mobile data?","acceptedAnswer":{"@type":"Answer","text":"Only for map pictures in the trip journal, the street address lookup and the daily update check. Drive backup, if you turn it on, waits for Wi-Fi unless you say otherwise."}},{"@type":"Question","name":"What is the evidence pack?","acceptedAnswer":{"@type":"Answer","text":"A two-page PDF you can send with a clip: when and where, the speed, the route, six key frames and anything Dashwise detected, plus a SHA-256 check code that shows the video hasn't been changed."}},{"@type":"Question","name":"Is the speed shown exactly right?","acceptedAnswer":{"@type":"Answer","text":"It comes from GPS, which is usually within a mile or two an hour on open roads, but can be wrong in tunnels, cities and at low speed. It is a record, not a calibrated speedometer."}},{"@type":"Question","name":"Should I touch it while driving?","acceptedAnswer":{"@type":"Answer","text":"No. Set it up before you set off and mount the phone in a holder. The Save button, volume keys and automatic bump saves are there so you don't need to look at or hold the phone."}},{"@type":"Question","name":"Who made it?","acceptedAnswer":{"@type":"Answer","text":"Dashwise is made by Jonathan Jackson, an independent developer in the United Kingdom."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Dashwise home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#0B111C"/><path d="M51,60L57,60L76,86L32,86Z" fill="#1B2638"/><path d="M51,60L32,86M57,60L76,86" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M54,64v3M54,71v5M54,80v6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><circle cx="54" cy="47" r="17" fill="#070B12"/><circle cx="54" cy="47" r="15" fill="none" stroke="#22D3EE" stroke-width="3"/><circle cx="54" cy="47" r="9.5" fill="#1F4166"/><circle cx="50.5" cy="43.5" r="2.4" fill="#fff" fill-opacity=".7"/><circle cx="71" cy="31" r="6" fill="#FF3B3B" fill-opacity=".25"/><circle cx="71" cy="31" r="3.8" fill="#FF3B3B"/></svg><span>Dashwise</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/dashwise/releases/latest/download/Dashwise.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>A serious dashcam. On the phone you already have.</h1>
+<p class="lede">Dashwise records the road while you use Waze, Maps or anything else, with a small indicator floating on top so you always know it's running. When something happens, one tap saves the moment, and a bump saves it for you.</p><p class="lede">It is free, with no adverts, no account and nothing to unlock. Your videos stay on your phone unless you choose to back them up to your own Google Drive.</p>
+
+<p class="get" id="download"><a class="button" href="https://github.com/CustomGPTer/dashwise/releases/latest/download/Dashwise.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a><a class="aside" href="#install">How to install</a></p>
+<ul class="pills"><li>Version 1.2.0</li><li>Android 10 or later</li><li>5.9 MB</li></ul>
+<p class="facts">Free, with nothing to unlock. No adverts, no account with the developer, no tracking. <a href="compare.html">Compare</a> or read the <a href="releases.html">release notes</a>.</p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="hero-phone"><div class="phone"><img src="./assets/screens/camera.png" alt="Recording: speed, street address, GPS strength and the clip timer, with a big Save button when it matters." width="393" height="852" fetchpriority="high"></div></div>
+</div>
+</div>
+
+<section class="promises" aria-label="In short">
+<div class="wrap"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No adverts</b><span>None in the app and none on this site.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No account</b><span>Open it, allow the camera and drive.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Records behind Waze</b><span>Keeps going with the screen off or the phone locked.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Everything free</b><span>Parking guard, two cameras, backup: no paid tier.</span></span></li></ul></div>
+</section>
+
+<section id="screens" aria-labelledby="screens-h">
+<div class="wrap">
+<h2 id="screens-h">A look inside</h2>
+<p class="intro">These are the real Dashwise screens, drawn from the app itself with made-up drives. The road picture behind the camera screen is an illustration. Swipe or scroll sideways to see them all.</p>
+<div class="gallery" tabindex="0" role="region" aria-label="Screens from Dashwise"><figure class="shot"><div class="phone"><img src="./assets/screens/camera.png" alt="Recording: speed, street address, GPS strength and the clip timer, with a big Save button when it matters." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Recording: speed, street address, GPS strength and the clip timer, with a big Save button when it matters.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/welcome.png" alt="A short setup walks through the camera, location and the two phone settings that keep it recording behind other apps." width="393" height="852" loading="eager" decoding="async"></div><figcaption>A short setup walks through the camera, location and the two phone settings that keep it recording behind other apps.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/trips.png" alt="Every drive becomes a trip, with its route, distance, time, top speed and anything that happened on the way." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Every drive becomes a trip, with its route, distance, time, top speed and anything that happened on the way.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/settings.png" alt="Every video setting in plain words: lens, resolution, 60 fps, bitrate, stabilisation and front-and-back recording." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Every video setting in plain words: lens, resolution, 60 fps, bitrate, stabilisation and front-and-back recording.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/safety.png" alt="Loop recording, the storage limit, impact detection and hard-braking saves, each with a line on what it does." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Loop recording, the storage limit, impact detection and hard-braking saves, each with a line on what it does.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/auto.png" alt="Start when the car&#x27;s Bluetooth connects or the phone is plugged in, then hand straight back to Waze." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Start when the car&#x27;s Bluetooth connects or the phone is plugged in, then hand straight back to Waze.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/parking.png" alt="Parking guard: the camera stays off and a knock or bump records a saved clip." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Parking guard: the camera stays off and a knock or bump records a saved clip.</figcaption></figure></div>
+</div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">Mount the phone, open Dashwise and tap the red button. That's all it needs.</p>
+<ol class="steps"><li><h3>Set it up once</h3><p>Allow the camera and location, then let Dashwise show over other apps and run without battery limits, so it keeps recording behind Waze.</p></li><li><h3>Drive</h3><p>Tap record, or let it start when your car's Bluetooth connects. Open Waze: a small red indicator floats on top while Dashwise records.</p></li><li><h3>Keep what matters</h3><p>Tap Save, the indicator's lock, or let a bump do it. Saved clips are kept; everything else is quietly recycled.</p></li></ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Nothing below is held back for a paid tier, because there is no paid tier.</p>
+<div class="groups"><div class="group"><h3>Recording you can rely on</h3><dl><div><dt>Records behind other apps</dt><dd>Keeps going under Waze, Maps, music or the home screen, with the screen off or the phone locked.</dd></div><div><dt>Loop recording</dt><dd>Back-to-back clips of 1 to 10 minutes. When the storage limit is reached, the oldest loop clips go first. Saved clips are never touched.</dd></div><div><dt>Restarts by itself</dt><dd>If another app grabs the camera or recording stops unexpectedly, Dashwise starts it again.</dd></div></dl></div><div class="group"><h3>Saves the moment</h3><dl><div><dt>One-tap Save</dt><dd>Keeps the current clip and, if it only just started, the one before, so the lead-up is always there.</dd></div><div><dt>Impact and hard braking</dt><dd>The G-sensor saves the clip after a knock, an emergency stop or a sharp swerve, then finishes it 30 seconds later so it's written safely.</dd></div><div><dt>Save from anywhere</dt><dd>The floating indicator, the notification, the volume keys, a home-screen widget and a quick-settings tile.</dd></div></dl></div><div class="group"><h3>Information on the video</h3><dl><div><dt>Burned into the picture</dt><dd>Date and time, speed, street address, coordinates and your own text, such as your number plate, upright whichever way the phone is mounted.</dd></div><div><dt>Every lens</dt><dd>Each camera the phone offers, with its angle of view, from ultra wide to telephoto. Up to 4K, 60 fps and stabilisation where the phone supports them.</dd></div><div><dt>Front and back together</dt><dd>On phones that can run both cameras at once, the cabin appears in a small window in the corner of the road video.</dd></div></dl></div><div class="group"><h3>Trips and evidence</h3><dl><div><dt>A journal of every drive</dt><dd>Route on a map coloured by speed, distance, time, average and top speed, a speed graph and the events along the way.</dd></div><div><dt>A map that follows the video</dt><dd>When a clip plays, a small map shows where the car was at that moment, with its speed.</dd></div><div><dt>Evidence pack</dt><dd>A two-page PDF for an insurer or the police: time, place, speed, route, key frames and a SHA-256 check code for the video.</dd></div></dl></div><div class="group"><h3>Quick editor</h3><dl><div><dt>Trim, mute, hide</dt><dd>Cut a clip to the part that matters, remove the sound, and pixelate a number plate or a face. The original is kept.</dd></div></dl></div><div class="group"><h3>Automatic, and kind to your phone</h3><dl><div><dt>Starts and stops itself</dt><dd>When the car's Bluetooth connects or the phone is plugged in, and stops after a delay you choose when you leave.</dd></div><div><dt>Heat and battery protection</dt><dd>Lowers quality and dims the screen when the phone gets hot, and stops cleanly before the battery dies so the last clip isn't lost.</dd></div><div><dt>Parking guard</dt><dd>Optional: with the phone on charge in the parked car, the camera stays off until a bump starts a saved recording.</dd></div></dl></div><div class="group"><h3>Private by design</h3><dl><div><dt>No account, no tracking</dt><dd>No adverts, analytics or advertising ID. The developer receives nothing.</dd></div><div><dt>Your videos stay yours</dt><dd>Clips are stored in your phone's Movies/Dashwise folder. Backup to your own Google Drive is off until you turn it on.</dd></div></dl></div></div>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your drives, not your data</h2>
+<ul class="plain"><li><h3>No account, no tracking</h3><p>No sign-up, adverts, analytics or advertising ID. The developer receives nothing.</p></li><li><h3>Videos stay on the phone</h3><p>In your gallery under Movies/Dashwise. Drive backup is optional and goes to your own account.</p></li><li><h3>Routes stay on the phone</h3><p>Only the map pictures are downloaded. Your trips are never uploaded.</p></li></ul>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<div class="wrap">
+<h2 id="install-h">Installing and updating</h2>
+<p class="intro">Dashwise is not on Google Play, so your phone asks a couple of extra questions the first time.</p>
+<ol class="steps"><li><h3>Download the app file</h3><p>Tap Download on your phone. The file is called Dashwise.apk and is about 5.9 MB. If Chrome says the file might be harmful, choose Download anyway.</p></li><li><h3>Allow the install</h3><p>Open the file. The first time, Android asks you to allow your browser to install apps. Allow it, go back and tap Install. If Google Play Protect steps in, choose More details, then Install anyway.</p></li><li><h3>Updating later</h3><p>Dashwise checks once a day whether a newer version is out and shows a note with a link to this page. Install the new file over the old one and your clips, trips and settings are kept.</p></li></ol>
+<p class="after-table">Version 1.2.0, released 22 November 2026. See the <a href="releases.html">release notes</a>, or <a href="releases.html#checking">check your download</a>.</p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq"><details><summary>Is Dashwise really free?</summary><p>Yes. There is no paid version, no subscription and no adverts. Parking guard, front-and-back recording and Drive backup are all included.</p></details><details><summary>Is it on Google Play?</summary><p>No. Dashwise is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later.</p></details><details><summary>Will it keep recording when I open Waze?</summary><p>Yes. Recording runs in the background with a notification, and a small indicator floats over Waze so you can see it's running and save a clip without switching back. Allow "Show over other apps" and set Dashwise's battery use to Unrestricted, which the setup walks you through.</p></details><details><summary>How much space does it use?</summary><p>You choose a limit, 20 GB to start with. When loop clips reach it, the oldest are deleted. A 3-minute 1080p clip is roughly 250 MB. Saved clips don't count towards the limit and are never deleted automatically.</p></details><details><summary>Where are my videos?</summary><p>In your phone's gallery: Movies/Dashwise/Loop for rolling clips and Movies/Dashwise/Saved for clips you or a bump saved. Photos are in Pictures/Dashwise.</p></details><details><summary>Can it start by itself?</summary><p>Yes. Pick your car's Bluetooth, or choose Start when charging, and Dashwise starts recording, then hands you back to Waze. Android only lets a camera app start recording while it's on screen, which is why it appears for a moment.</p></details><details><summary>Does it use mobile data?</summary><p>Only for map pictures in the trip journal, the street address lookup and the daily update check. Drive backup, if you turn it on, waits for Wi-Fi unless you say otherwise.</p></details><details><summary>What is the evidence pack?</summary><p>A two-page PDF you can send with a clip: when and where, the speed, the route, six key frames and anything Dashwise detected, plus a SHA-256 check code that shows the video hasn't been changed.</p></details><details><summary>Is the speed shown exactly right?</summary><p>It comes from GPS, which is usually within a mile or two an hour on open roads, but can be wrong in tunnels, cities and at low speed. It is a record, not a calibrated speedometer.</p></details><details><summary>Should I touch it while driving?</summary><p>No. Set it up before you set off and mount the phone in a holder. The Save button, volume keys and automatic bump saves are there so you don't need to look at or hold the phone.</p></details><details><summary>Who made it?</summary><p>Dashwise is made by Jonathan Jackson, an independent developer in the United Kingdom.</p></details></div>
+</div>
+</section>
+
+<section class="closing" aria-labelledby="closing-h">
+<div class="wrap">
+<div><h2 id="closing-h">Drive. Dashwise has it covered.</h2><p>Free, with no adverts and nothing to unlock. Made by the developer of several other free Android apps: <a href="more-apps.html">see them all</a>.</p></div>
+<a class="button" href="https://github.com/CustomGPTer/dashwise/releases/latest/download/Dashwise.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a>
+</div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="Dashwise home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#0B111C"/><path d="M51,60L57,60L76,86L32,86Z" fill="#1B2638"/><path d="M51,60L32,86M57,60L76,86" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M54,64v3M54,71v5M54,80v6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><circle cx="54" cy="47" r="17" fill="#070B12"/><circle cx="54" cy="47" r="15" fill="none" stroke="#22D3EE" stroke-width="3"/><circle cx="54" cy="47" r="9.5" fill="#1F4166"/><circle cx="50.5" cy="43.5" r="2.4" fill="#fff" fill-opacity=".7"/><circle cx="71" cy="31" r="6" fill="#FF3B3B" fill-opacity=".25"/><circle cx="71" cy="31" r="3.8" fill="#FF3B3B"/></svg><span>Dashwise</span></a>
+<p>&copy; 2026 Jonathan Jackson. Dashwise is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/dashwise/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
